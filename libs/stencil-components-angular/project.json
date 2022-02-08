@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/stencil-components-angular",
+  "sourceRoot": "libs/stencil-components-angular/src",
+  "prefix": "wc-poc",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/stencil-components-angular"],
+      "options": {
+        "jestConfig": "libs/stencil-components-angular/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/stencil-components-angular/src/**/*.ts",
+          "libs/stencil-components-angular/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

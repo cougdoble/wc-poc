@@ -1,0 +1,25 @@
+{
+  "root": "libs/stencil-components-react",
+  "sourceRoot": "libs/stencil-components-react/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/stencil-components-react/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/stencil-components-react"],
+      "options": {
+        "jestConfig": "libs/stencil-components-react/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

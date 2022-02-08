@@ -1,0 +1,34 @@
+{
+  "root": "libs/fast-components",
+  "sourceRoot": "libs/fast-components/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/fast-components",
+        "tsConfig": "libs/fast-components/tsconfig.lib.json",
+        "packageJson": "libs/fast-components/package.json",
+        "main": "libs/fast-components/src/index.ts",
+        "assets": ["libs/fast-components/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/fast-components/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/fast-components"],
+      "options": {
+        "jestConfig": "libs/fast-components/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

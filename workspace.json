@@ -1,4 +1,14 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "angularapp": "apps/angularapp",
+    "angularapp-e2e": "apps/angularapp-e2e",
+    "fast-components": "libs/fast-components",
+    "reactapp": "apps/reactapp",
+    "reactapp-e2e": "apps/reactapp-e2e",
+    "stencil-components": "libs/stencil-components",
+    "stencil-components-angular": "libs/stencil-components-angular",
+    "stencil-components-react": "libs/stencil-components-react",
+    "svelte-components": "libs/svelte-components"
+  }
 }

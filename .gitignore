@@ -37,3 +37,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+.angular
+libs/stencil-components-angular/**/generated
+libs/stencil-components-react/**/generated

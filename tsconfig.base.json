@@ -14,7 +14,23 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@wc-poc/fast-components": ["libs/fast-components/src/index.ts"],
+      "@wc-poc/stencil-components": ["dist/libs/stencil-components"],
+      "@wc-poc/stencil-components-angular": [
+        "libs/stencil-components-angular/src/index.ts"
+      ],
+      "@wc-poc/stencil-components-react": [
+        "libs/stencil-components-react/src/index.ts"
+      ],
+      "@wc-poc/stencil-components/loader": [
+        "dist/libs/stencil-components/loader"
+      ],
+      "@wc-poc/svelte-components": ["libs/svelte-components/src/index.ts"],
+      "@wc-poc/svelte-components/loader": [
+        "dist/libs/svelte-components/svelte-components.es.js"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
